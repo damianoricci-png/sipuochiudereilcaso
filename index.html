@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Si può chiudere il caso?</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 150px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#risposta {
+    font-size: 120px;
+    font-weight: bold;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>SI PUÒ CHIUDERE IL CASO?</h1>
+
+<div id="risposta" onclick="genera()">
+CLICCA QUI
+</div>
+
+<script>
+function genera() {
+    document.getElementById("risposta").innerHTML =
+        Math.random() < 0.5 ? "✅ SI" : "❌ NO";
+}
+</script>
+
+</body>
+</html>
